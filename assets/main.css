@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("fonts/vazir/Vazir.eot");
+    src: url("fonts/vazir/Vazir.eot?#iefix") format('embedded-opentype');
+    src: url("fonts/vazir/Vazir.woff") format('woff');
+    src: url("fonts/vazir/Vazir.woff2") format('woff2');
+    src: url("fonts/vazir/Vazir.ttf") format('truetype');
+
+}
+
+body {
+    font-family: Vazir, serif;
+}
+
+.sidebar{
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    padding: 2rem;
+    overflow: hidden;
+    transition: all 0.6s;
+    overflow-y: scroll;
+
+}
+
+.main .content .stats-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .content .stats-icon i {
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.bg-red {
+    background-color: #ff7976;
+}
+
+.bg-purple {
+    background-color: #9694ff;
+}
+
+.bg-blue {
+    background-color: #57caeb;
+}
+
+.bg-green {
+    background-color: #5ddab4;
+}
+
+.sidebar .sidebar-item {
+    margin-top: 0.5rem;
+}
+
+.fs-7{
+    font-size: 0.8rem;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.sidebar .sidebar-item .sidebar-link {
+    text-decoration: none;
+    color: #25396f;
+    padding: 0.7rem 1rem;
+    display: flex;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+
+.sidebar .sidebar-item .sidebar-link i{
+    color: #7c8db5;
+}
+
+.sidebar .sidebar-item.active .sidebar-link{
+
+    background-color: #435ebe;
+    color: #ffff;
+}
+
+.sidebar .sidebar-item.active i{
+    color: #ffff;
+}
+
+.sidebar .sidebar-item .sidebar-link:hover{
+    background-color: #f0f1f5;
+}
+
+.sidebar .submenu{
+    list-style: none;
+}
+
+.sidebar .submenu .submenu-item a {
+    padding: 0.7rem 1rem;
+    display: block;
+    color: #25396f;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.sidebar .submenu .submenu-item a:hover {
+    margin-right: 0.3rem;
+}
+.main{
+    background-color: #f2f7ff;
+    height: 100vh;
+    margin-right: 250px;
+    transition: all 0.3s;
+
+}
+
+
+i{
+    cursor: pointer;
+}
+
+.breadcrumb a {
+    color: #435ebe;
+    text-decoration: none;
+}
+
+.card-header {
+    background-color: #ffffff;
+}
+/*@media (min-width: 992px) {*/
+/*    .main{*/
+/*        margin-right: 250px;*/
+/*    }*/
+/*}*/

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>laning page</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+<section>
+    <section id="sidebar" class="sidebar active-sidebar">
+        <div class="d-flex align-items-center justify-content-between">
+            <h3 class="fw-bold">webprog</h3>
+        </div>
+        <div class="mt-4">
+            <ul class="list-unstyled">
+                <li class="sidebar-item active">
+                    <a class="sidebar-link" href="./index.html">
+                        <i class="me-2 bi bi-grid-fill"></i>
+                        <span>داشبور</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#" onclick="dropdown(this)">
+                        <i class="me-2 bi bi-grid-fill"></i>
+                        <span>فروشگاه</span>
+                        <i class="ms-auto bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="submenu d-none">
+                        <li class="submenu-item">
+                            <a href="#">لیست فروشگاه</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">ایجاد فروشگاه</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">ویرایش فروشگاه</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">ایجاد فروشگاه</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#" onclick="dropdown(this)">
+                        <i class="me-2 bi bi-basket-fill"></i>
+                        <span>محصولات</span>
+                        <i class="ms-auto bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="submenu d-none">
+                        <li class="submenu-item">
+                            <a href="./products.html">لیست محصولات</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">ایجاد محصولات</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">ویرایش محصولات</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="#">ایجاد محصولات</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#">
+                        <i class="me-2 bi bi-people-fill"></i>
+                        <span>کاربران</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+    <section id="main" class="main">
+        <header class="d-flex justify-content-between p-2 align-items-center">
+            <div>
+                <a href="#">
+                    <i onclick="togglesidebar()" class="bi bi-justify fs-3"></i>
+                </a>
+
+            </div>
+            <div class="d-flex align-items-center">
+                <a class="me-2">
+                    <img width="45" class="img-fluid rounded-circle" src="/images/7.jpg" alt="">
+                </a>
+                <div>
+                    <h6 class="fs-6 fw-bold text-gray mb-0">مازیار دهقانی</h6>
+                    <p class="fs-7 fw-bold mb-0 text-gray">مدیر فروشگاه</p>
+                </div>
+            </div>
+
+        </header>
+        <div class="content p-2 p-lg-4">
+            <div class="container-fluid">
+                <div class="row gy-4">
+                    <div class="col-xl-12">
+                        <!-- Stats -->
+                        <div class="row g-3">
+                            <div class="col-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row g-3">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon bg-purple">
+                                                    <i class="bi bi-eye-fill lh-0"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="fs-7 text-muted">تعداد کاربران</h6>
+                                                <h6 class="fw-bold mb-0">345</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row g-3">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon bg-blue">
+                                                    <i class="bi bi-person-fill lh-0"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="fs-7 text-muted">تعداد محصولات</h6>
+                                                <h6 class="fw-bold mb-0">1230</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row g-3">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon bg-green">
+                                                    <i class="bi bi-person-plus-fill lh-0"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="fs-7 text-muted">تعداد سفارشات</h6>
+                                                <h6 class="fw-bold mb-0">234</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row g-3">
+                                            <div class="col-md-4">
+                                                <div class="stats-icon bg-red">
+                                                    <i class="bi bi-bookmark-dash-fill lh-0"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <h6 class="fs-7 text-muted">موجودی انبار</h6>
+                                                <h6 class="fw-bold mb-0">1309</h6>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<script src="assets/bootstrap/bootstrap.bundle.js"></script>
+<script>
+
+
+    function togglesidebar() {
+        if (document.getElementById('sidebar').classList.contains('active-sidebar')) {
+            closesidebar();
+            document.getElementById('sidebar').classList.remove('active-sidebar')
+        } else {
+            opensidebar();
+            document.getElementById('sidebar').classList.add('active-sidebar')
+        }
+    }
+
+    function opensidebar() {
+
+        document.getElementById('main').style.marginRight = "250px";
+        document.getElementById('sidebar').style.width = "250px";
+        document.getElementById('sidebar').style.padding = "2rem";
+
+    }
+
+    function closesidebar() {
+
+        document.getElementById('main').style.marginRight = "0px";
+        document.getElementById('sidebar').style.width = "0px";
+        document.getElementById('sidebar').style.padding = "0px";
+    }
+
+
+    function dropdown(e) {
+
+
+        if (e.nextElementSibling.classList.contains('d-none')) {
+            e.nextElementSibling.classList.remove('d-none')
+        } else {
+            e.nextElementSibling.classList.add('d-none')
+        }
+    }
+
+</script>
+</body>
+</html>
